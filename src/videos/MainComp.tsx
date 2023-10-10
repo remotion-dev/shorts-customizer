@@ -4,27 +4,25 @@ import {Goal} from './Goal';
 import {Minute} from './Minute';
 import {NewScore} from './NewScore';
 import {Score} from './Score';
+import {z} from 'zod';
+import {player} from './Spieler';
 
-export const MainComp: React.FC<{
-	firstName: string;
-	lastName: string;
-	seasonGoal: number;
-	minute: number;
-	awayScore: number;
-	homeScore: number;
-	awayTeam: string;
-	portraitAction: string;
-	playerNumber: number;
-}> = ({
-	firstName,
-	lastName,
+export const schema = z.object({
+	player,
+	seasonGoal: z.number().min(1),
+	minute: z.number().min(1).max(90),
+	awayScore: z.number(),
+	homeScore: z.number(),
+	awayTeam: z.string(),
+});
+
+export const MainComp: React.FC<z.infer<typeof schema>> = ({
 	seasonGoal,
 	minute,
 	awayScore,
 	awayTeam,
 	homeScore,
-	portraitAction,
-	playerNumber,
+	player,
 }) => {
 	return (
 		<Series>
@@ -35,13 +33,7 @@ export const MainComp: React.FC<{
 				<Score />
 			</Series.Sequence>
 			<Series.Sequence durationInFrames={90}>
-				<Goal
-					firstName={firstName}
-					lastName={lastName}
-					seasonGoal={seasonGoal}
-					portraitAction={portraitAction}
-					playerNumber={playerNumber}
-				/>
+				<Goal player={player} seasonGoal={seasonGoal} />
 			</Series.Sequence>
 			<Series.Sequence durationInFrames={65}>
 				<NewScore

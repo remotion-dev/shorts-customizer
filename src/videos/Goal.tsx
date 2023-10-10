@@ -1,24 +1,15 @@
+import {z} from 'zod';
 import React from 'react';
-import { AbsoluteFill } from 'remotion';
-import { Background } from './Background';
-import { Spieler } from './Spieler';
+import {Background} from './Background';
+import {player, Spieler} from './Spieler';
 
 export const Goal: React.FC<{
-  firstName: string;
-  lastName: string;
-  playerNumber: number;
-  seasonGoal: number;
-  portraitAction: string;
-}> = ({ firstName, lastName, seasonGoal, playerNumber, portraitAction }) => {
-  return (
-    <Background>
-      <Spieler
-        firstName={firstName}
-        lastName={lastName}
-        seasonGoal={seasonGoal}
-        portraitAction={portraitAction}
-        playerNumber={playerNumber}
-      />
-    </Background>
-  );
+	player: z.infer<typeof player>;
+	seasonGoal: number;
+}> = ({player, seasonGoal}) => {
+	return (
+		<Background>
+			<Spieler player={player} seasonGoal={seasonGoal} />
+		</Background>
+	);
 };
