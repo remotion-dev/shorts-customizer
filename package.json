@@ -1,30 +1,31 @@
 {
-  "name": "football-stories",
-  "version": "1.0.0",
-  "description": "My Remotion video",
-  "scripts": {
-    "start": "remotion studio",
-    "build": "remotion render HelloWorld out/video.mp4",
-    "upgrade": "remotion upgrade",
-    "test": "eslint src --ext ts,tsx,js,jsx && tsc"
-  },
-  "repository": {},
-  "license": "UNLICENSED",
-  "dependencies": {
-    "@remotion/cli": "4.0.46",
-    "@remotion/zod-types": "^4.0.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "remotion": "4.0.46",
-    "zod": "^3.21.4"
-  },
-  "devDependencies": {
-    "@remotion/eslint-config": "4.0.46",
-    "@types/react": "^18.0.26",
-    "@types/web": "^0.0.86",
-    "eslint": "^8.43.0",
-    "prettier": "^2.8.8",
-    "typescript": "^4.9.4"
-  },
-  "packageManager": "npm@10.1.0"
+	"name": "football-stories",
+	"version": "1.0.0",
+	"description": "My Remotion video",
+	"scripts": {
+		"start": "remotion studio",
+		"build": "remotion render HelloWorld out/video.mp4",
+		"upgrade": "remotion upgrade",
+		"test": "eslint src --ext ts,tsx,js,jsx && tsc"
+	},
+	"repository": {},
+	"license": "UNLICENSED",
+	"dependencies": {
+		"@remotion/cli": "4.0.46",
+		"@remotion/zod-types": "^4.0.0",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0",
+		"remotion": "4.0.46",
+		"simplex-noise": "^3",
+		"zod": "^3.22.4"
+	},
+	"devDependencies": {
+		"@remotion/eslint-config": "4.0.46",
+		"@types/react": "^18.0.26",
+		"@types/web": "^0.0.86",
+		"eslint": "^8.43.0",
+		"prettier": "^2.8.8",
+		"typescript": "^4.9.4"
+	},
+	"packageManager": "npm@10.1.0"
 }

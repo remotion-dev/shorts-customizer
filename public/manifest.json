@@ -1,0 +1,48 @@
+{
+  "name": "YB VIDEO CENTER",
+  "short_name": "Video Center",
+  "icons": [
+    {
+      "src": "/manifest\/icon_96x96.png",
+      "sizes": "96x96",
+      "type": "image\/png",
+      "density": "4.0"
+    },
+    {
+      "src": "/manifest\/icon_128x128.png",
+      "sizes": "128x128",
+      "type": "image\/png",
+      "density": "4.0"
+    },
+    {
+      "src": "/manifest\/icon_192x192.png",
+      "sizes": "192x192",
+      "type": "image\/png",
+      "density": "4.0"
+    },
+    {
+      "src": "/manifest\/icon_256x256.png",
+      "sizes": "256x256",
+      "type": "image\/png",
+      "density": "4.0"
+    },
+    {
+      "src": "/manifest\/icon_384x348.png",
+      "sizes": "384x348",
+      "type": "image\/png",
+      "density": "4.0"
+    },
+    {
+      "src": "/manifest\/icon_512x512.png",
+      "sizes": "512x512",
+      "type": "image\/png",
+      "density": "4.0"
+    }
+  ],
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Das Smarte Video Matchcenter des BSCYBs",
+  "theme_color": "#383838",
+  "background_color": "#fab042"
+}
