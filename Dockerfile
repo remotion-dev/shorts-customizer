@@ -1,6 +1,6 @@
-FROM debian:bookworm
+FROM node:20-bookworm
 RUN apt-get update
-RUN apt-get install -y nodejs npm chromium
+RUN apt-get install -y chromium
 COPY package.json package*.json tsconfig.json* remotion.config.* ./
 COPY src ./src
 COPY public ./public
