@@ -41,7 +41,7 @@ npm run upgrade
 
 Get started with Remotion by reading the [fundamentals page](https://www.remotion.dev/docs/the-fundamentals). <br/>
 
-If you want to make use of this project, you should read the dedicated [docs](https://www.remotion.dev/docs/deploy-studio).
+If you want to make use of this project by deploying the Remotion Studio, you should read the dedicated [docs](https://www.remotion.dev/docs/deploy-studio).
 
 ## Help
 
